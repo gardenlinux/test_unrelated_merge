@@ -1,0 +1,10 @@
+on:
+  - push
+  - pull_request
+  - pull_request_target
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - run: find .
